@@ -1,3 +1,23 @@
-
-
-
+#header .header-navbar {
+    display: inline-block;
+    align-items: center;
+}
+#header .header-navbar form {
+    width: 100vw;
+}
+/* #header .header-navbar .menu-button{
+ 
+  
+} */
+#header .header-navbar .menu-button span {
+    width: 20px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    padding-top: -20px;
+}
+#header .search-form input {
+ width: 200px;
+ margin-right:0px;
+ margin-left: 20px;
+}
