@@ -1,6 +1,7 @@
 const headerTitle = document.getElementById('header-title');
 const searchForm = document.getElementById('search-form');
 const searchIcon = document.getElementById('search-icon');
+const searchButton = document.getElementById('search-button');
 
 function displayForm() {
     searchIcon.hidden = true;
@@ -14,4 +15,4 @@ function hideFormOnSearchButtonClick() {
 }
 
 searchIcon.addEventListener('click', displayForm);
-searchForm.addEventListener('click', hideFormOnSearchButtonClick)
+searchButton.addEventListener('click', hideFormOnSearchButtonClick)
