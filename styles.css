@@ -10,10 +10,22 @@
     background-color:#0093E3 ;
     color: white;
 }
+#menu-button:hover {
+    filter: brightness(80%);
+}
 #menu-button img {
     color: white;
     
 }
+#header-title:hover {
+    filter: brightness(80%);
+}
+@media only screen and (max-width: 500px) {
+    #header-title {
+        display: none;
+    } 
+}
+
 
 #header .search-form {
     display: flex;
@@ -33,12 +45,15 @@
     font-size: 1.2em;
 }
 #search-button {
+    width: 100px;
    height: 40px;
    border: 1px solid white;
    border-radius: 5%;
    color: white;
    background-color: #0093E3;
-   margin: 5px 10px 7px 1px;
+   margin: 5px 10px 7px 5px;
 
 }
- 
+ #search-button:hover {
+    filter: brightness(80%);
+ }
