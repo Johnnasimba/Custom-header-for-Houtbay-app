@@ -91,3 +91,13 @@
         padding-left: 0px;
     }
 }
+ @media only screen and (max-width: 750px) {
+    #header-title {
+        margin: 5px 0px 10px 0px;
+        padding: 0px;
+    } 
+    #menu-button {
+        padding: 0px;
+    }
+}
+
