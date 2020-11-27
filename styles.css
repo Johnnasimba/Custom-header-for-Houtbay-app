@@ -9,6 +9,7 @@
 #menu-button {
     background-color:#0093E3 ;
     color: white;
+    padding-left: 0px;
 }
 #menu-button:hover {
     filter: brightness(80%);
@@ -32,6 +33,7 @@
     background-color:#0093E3 ;
     width: 200px;
     margin-right: 0px;
+    height: 50px;
 }
 
 #header .search-form input {
@@ -61,12 +63,23 @@
     margin: 5px 10px 7px 0px;
     padding-left: 0px;
  }
+#search-icon:hover {
+    filter: brightness(80%);
+}
 
 
 
- @media only screen and (max-width: 500px) {
-    #header-title {
-        /* display: none; */
+/* Display search icon only on small screens */
+@media only screen and (min-width: 500px) {
+    #search-icon {
+        display: none;
+    }
+}
+
+/* Hide  search form on small screens. It will only be displayed on click on Search-icon */
+@media only screen and (max-width: 500px) {
+    #search-form {
+        display: none;
     } 
 }
  @media only screen and (max-width: 350px) {
