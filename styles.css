@@ -62,6 +62,7 @@
     background-color: #0093E3;
     margin: 5px 10px 7px 0px;
     padding-left: 0px;
+    color: white;
  }
 #search-icon:hover {
     filter: brightness(80%);
