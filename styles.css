@@ -106,21 +106,24 @@
 
 
 /* Side Nav  */
+#preload * {
+    transition: none !important;
+    
+}
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: var(--header-height);
     background: #333333;
     display: flex;
 }
 
 .header__button {
-    width: var(--header-height);
     flex-shrink: 0;
     background: none;
-    outline: none;
+    outline: none ;
     border: none;
     color: #ffffff;
     cursor: pointer;
@@ -136,6 +139,7 @@
     background: #ffffff;
     transform: translateX(-250px);
     transition: transform 0.3s;
+    
 }
 
 .nav--open .nav__links {
@@ -149,7 +153,7 @@
     color: #666666;
     font-weight: bold;
     font-size: 14px;
-    text-decoration: none;
+    text-decoration: none !important;
     padding: 12px 15px;
     background: transform 0.2s;
 }
@@ -157,14 +161,9 @@
 .nav__link > i {
     margin-right: 15px;
 }
-
-.nav__link--active {
-    color: #009578;
-}
-
-.nav__link--active,
 .nav__link:hover {
     background: #eeeeee;
+    color: teal;
 }
 
 .nav__overlay {
