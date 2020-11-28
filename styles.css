@@ -77,11 +77,11 @@
 }
 
 /* Hide  search form on small screens. It will only be displayed on click on Search-icon */
-/* @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     #search-form {
         display: none;
     } 
-} */
+}
  @media only screen and (max-width: 350px) {
     #header-title {
         margin: 5px 0px 10px 0px;
