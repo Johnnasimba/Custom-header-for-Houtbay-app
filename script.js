@@ -2,6 +2,7 @@ const headerTitle = document.getElementById('header-title');
 const searchForm = document.getElementById('search-form');
 const searchIcon = document.getElementById('search-icon');
 const searchButton = document.getElementById('search-button');
+const menuButton =  document.getElementById('menu-button')
 
     // Create a media condition that targets view ports of screen width less than 500px
 
@@ -44,3 +45,18 @@ searchButton.addEventListener('click', hideFormOnSearchButtonClick)
 
 // side nav scripts
 
+window.addEventListener("load", () => {
+    document.body.classList.remove("preload");
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const nav = document.getElementById("side-nav");
+
+menuButton.addEventListener("click", () => {
+        nav.classList.add("nav--open");
+    });
+
+    document.getElementById("nav__overlay").addEventListener("click", () => {
+        nav.classList.remove("nav--open");
+    });
+});
